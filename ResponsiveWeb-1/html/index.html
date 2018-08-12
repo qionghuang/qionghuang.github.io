@@ -81,38 +81,29 @@
 
 
     <!--Slideshow-container-->
-<div class="row">
-<div class="col-md-12">
-    <div id="Meals" class="tabcontent"></div>
-    <div id="Beverage" class="tabcontent"></div>
-    <div id="Dessert" class="tabcontent"></div>
-    <div id="Burger" class="tabcontent"></div>
-
-    <button class="tablink" onclick="openCity('Meals', this, 'red')" id="defaultOpen">Meals</button>
-    <button class="tablink" onclick="openCity('Beverage', this, 'green')">Beverage</button>
-    <button class="tablink" onclick="openCity('Dessert', this, 'blue')">Dessert</button>
-    <button class="tablink" onclick="openCity('Burger', this, 'orange')">Burger</button>
-    
-    <script>
-            function openCity(cityName,elmnt,color) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].style.backgroundColor = "";
-                }
-                document.getElementById(cityName).style.display = "block";
-                elmnt.style.backgroundColor = color;
-            
-            }
-            // Get the element with id="defaultOpen" and click on it
-            document.getElementById("defaultOpen").click();
-    </script>
-</div>
-</div>
+    <div class="w3-content w3-section">
+        <img class="mySlides" src="../image/background1.jpeg" style="width:100%">
+        <img class="mySlides" src="../image/background2.jpeg" style="width:100%">
+        <img class="mySlides" src="../image/background3.jpeg" style="width:100%">
+        <img class="mySlides" src="../image/background4.jpeg" style="width:100%">
+    </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
     <br>
 
     <!--foodgallery-->
@@ -171,7 +162,7 @@
                         <br>
                         <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                         <div class="cart">                  
-                        <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                        <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                         </div>
                     </div>
 
@@ -186,7 +177,7 @@
                         <br>
                         <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                         <div class="cart">                  
-                        <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                        <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                         </div>
                     </div>
 
@@ -201,7 +192,7 @@
                         <br>
                         <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                         <div class="cart">                  
-                        <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                        <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                         </div>
                     </div>
 
@@ -216,7 +207,7 @@
                         <br>
                         <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                         <div class="cart">                  
-                        <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                        <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                         </div>
                     </div>
                 </div>
@@ -233,7 +224,7 @@
                             <br>
                             <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                             <div class="cart">                  
-                            <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                            <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                             </div>
                         </div>
     
@@ -248,7 +239,7 @@
                             <br>
                             <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                             <div class="cart">                  
-                            <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                            <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                             </div>
                         </div>
     
@@ -263,7 +254,7 @@
                             <br>
                             <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                             <div class="cart">                  
-                            <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                            <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                             </div>
                         </div>
     
@@ -278,7 +269,7 @@
                             <br>
                             <p class="food-name">FOOD NAME 1234<br>S$7.20</p> 
                             <div class="cart">                  
-                            <i class="fa fa-cart-plus" style="font-size:60px;"></i>
+                            <i class="fa fa-cart-plus" style="font-size:55px;"></i>
                             </div>
                         </div>
                     </div>
