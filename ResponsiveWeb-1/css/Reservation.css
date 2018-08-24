@@ -35,6 +35,7 @@ h2 {
   .container {
       color: white;
       width: 100%;
+      margin-bottom: 50px;
   }
   
 .container input {
@@ -72,8 +73,4 @@ select {
 
 button:hover {
     background-color: #d3c64e;
-}
-/*calender*/
-.calender iframe{
-    margin-top: 20px;
 }
